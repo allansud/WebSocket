@@ -13,6 +13,7 @@ import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
 
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
@@ -21,6 +22,7 @@ import com.google.common.collect.Maps;
 
 import br.com.agf.common.JSONUtils;
 
+@ServerEndpoint("/chat")
 public class SocketServer {
 	 
     // set to store all the live sessions
