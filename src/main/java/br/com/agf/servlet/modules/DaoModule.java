@@ -1,4 +1,4 @@
-package br.com.agf.module;
+package br.com.agf.servlet.modules;
 
 import java.util.HashMap;
 import java.util.Map;
