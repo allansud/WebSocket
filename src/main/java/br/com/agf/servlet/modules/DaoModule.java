@@ -26,10 +26,10 @@ public class DaoModule extends AbstractModule {
 
 		Map<String, String> properties = new HashMap<String, String>();
 		properties.put("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
-		properties.put("hibernate.connection.url", "jdbc:mysql://192.168.0.104:3306/MobileChat");
-		properties.put("hibernate.connection.username", "sa");
-		properties.put("hibernate.connection.password", "");
-		properties.put("hibernate.connection.pool_size", "1");
+		properties.put("hibernate.connection.datasource", "java:/MySqlDS");
+		//properties.put("hibernate.connection.username", "sa");
+		//properties.put("hibernate.connection.password", "");
+		//properties.put("hibernate.connection.pool_size", "1");
 		properties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 		properties.put("hibernate.hbm2ddl.auto", "create");
 
