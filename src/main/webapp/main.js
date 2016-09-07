@@ -124,7 +124,7 @@ function parseMessage(message) {
 		var online_count = jObj.onlineCount;
 
 		$('p.online_count').html(
-				'Hello, <span class="green">' + name + '</span>. <b>'
+				'Ola, <span class="green">' + name + '</span>. <b>'
 						+ online_count + '</b> pessoas online no momento')
 				.fadeIn();
 
@@ -164,7 +164,7 @@ function parseMessage(message) {
 		var online_count = jObj.onlineCount;
 
 		$('p.online_count').html(
-				'Hello, <span class="green">' + name + '</span>. <b>'
+				'Ola, <span class="green">' + name + '</span>. <b>'
 						+ online_count + '</b> pessoas online no momento');
 
 		appendChatMessage(li);
