@@ -1,23 +1,20 @@
-jersey-guice-bootstrap
+Projeto de WebSocket com Java
 ======================
 
-RESTful Web Services Application Sample Project with Jersey 1.18.1 and Google Guice 3.0
+Um projeto simples mostando como usar WebSocket para fazer um chat app.
 
 Dependencies included
 ---------------------
-- Servlet 2.5
-- Jersey 1.18.1
-- Guice 3.0
-- guice-persist 3.0
-- gson 2.2.4
-- joda-time 2.4
-- JUnit 4.10
+- gson 2.7
+- google-collections
+- javaee-api-7.0.jar
+- json-org.jar
 
 Requirements
 ------------
 - Java 8
 - Maven 3
-- Tomcat 7
+- WildFly 10
 
 Building
 --------
@@ -26,6 +23,6 @@ Building
 
 After Deploy on Application Server
 ----------------------------------
-- The REST WS are accessible under /rest/*
-- Front-End not yet implemented.
+- O WebSocket pode ser consumido por Js, C#, java, python etc.
+- Front-End implementado
 
