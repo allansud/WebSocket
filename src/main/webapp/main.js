@@ -157,7 +157,7 @@ function parseMessage(message) {
 		$('#input_message').val('');
 
 	} else if (jObj.flag == 'exit') {
-		// if the json flag is 'exit', it means somebody left the chat room
+		//Se json flag for 'exit', significa que alguém saiu da sala de conversa.
 		var li = '<li class="exit"><span class="name red">' + jObj.name
 				+ '</span> ' + jObj.message + '</li>';
 
