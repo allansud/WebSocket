@@ -15,8 +15,8 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
-import org.codehaus.jettison.json.JSONException;
-import org.codehaus.jettison.json.JSONObject;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import com.google.common.collect.Maps;
 
@@ -86,7 +86,7 @@ public class SocketServer {
         }
  
         // Notifying all the clients about new person joined
-        sendMessageToAll(session.getId(), name, " joined conversation!", true,
+        sendMessageToAll(session.getId(), name, " entrou na conversa!", true,
                 false);
  
     }
@@ -132,7 +132,7 @@ public class SocketServer {
         sessions.remove(session);
  
         // Notifying all the clients about person exit
-        sendMessageToAll(session.getId(), name, " left conversation!", false,
+        sendMessageToAll(session.getId(), name, " saiu da conversa!", false,
                 true);
  
     }

@@ -8,13 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jersey-guice-bootstrap Maven Webapp</name>
 	<url>http://github.com/pabiagioli/jersey-guice-bootstrap</url>
-	<description>Archetype for building RESTful Web Services with Jersey 1.18.1 and Google Guice 3.0</description>
-	<scm>
-		<connection>scm:git:git@github.com:pabiagioli/jersey-guice-bootstrap-archetype.git</connection>
-		<developerConnection>scm:git:git@github.com:pabiagioli/jersey-guice-bootstrap-archetype.git</developerConnection>
-		<url>scm:git:git@github.com:pabiagioli/jersey-guice-bootstrap-archetype.git</url>
-		<tag>HEAD</tag>
-	</scm>
+	<description>RESTful Web Services with Jersey 2.23.2 and Google Guice 3.0</description>
+
 	<developers>
 		<developer>
 			<name>Allan Gonçalves de Freitas</name>
@@ -25,76 +20,23 @@
 	</developers>
 
 	<properties>
-		<version.jersey>1.18.1</version.jersey>
+		<version.resteasy>3.0.19.Final</version.resteasy>
 		<version.guice>3.0</version.guice>
 		<version.junit>4.10</version.junit>
-		<version.servlet>2.5</version.servlet>
+		<version.servlet>3.0</version.servlet>
 	</properties>
 
 	<dependencies>
-		<!-- Jersey 1.18.1 -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>${version.servlet}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-servlet</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-core</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-json</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey.contribs</groupId>
-			<artifactId>jersey-multipart</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey.contribs</groupId>
-			<artifactId>jersey-guice</artifactId>
-			<version>${version.jersey}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.inject.extensions</groupId>
-			<artifactId>guice-persist</artifactId>
-			<version>${version.guice}</version>
-		</dependency>
 		<!-- Gson: Java to Json conversion -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
-			<version>2.2.4</version>
-			<scope>compile</scope>
+			<version>2.7</version>
 		</dependency>
-		<!-- Joda time -->
 		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>2.4</version>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
 		</dependency>
 		<!-- Junit -->
 		<dependency>
@@ -118,11 +60,11 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.9</version>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>javax.mail</groupId> -->
-<!-- 			<artifactId>mail</artifactId> -->
-<!-- 			<version>1.4</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.mail</groupId> -->
+		<!-- <artifactId>mail</artifactId> -->
+		<!-- <version>1.4</version> -->
+		<!-- </dependency> -->
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>

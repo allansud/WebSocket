@@ -7,31 +7,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.ClientResponse;
-import com.sun.jersey.api.client.WebResource;
-
 
 public class SendEmail {
-
-	public boolean Enviar(String to, String subject, String message) {
-		boolean succeed = false;
-		try {
-			Client client = Client.create();
-			
-			WebResource resource = client.resource("http://indexacao.esy.es/indexacao.php");			
-			ClientResponse response = resource.queryParam("to", to)
-					.queryParam("subject", subject).queryParam("message", message)
-					.type("application/x-www-form-urlencoded")
-					.get(ClientResponse.class);
-			
-			return response.getStatus() != 200 ? false : true;
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return succeed;
-	}
 
 	protected String readEmailFromHtml(String filePath, Map<String, String> input) {
 		String msg = readContentFromFile(filePath);
