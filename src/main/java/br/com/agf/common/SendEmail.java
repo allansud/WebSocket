@@ -9,7 +9,8 @@ import java.util.Set;
 
 
 public class SendEmail {
-
+	
+	
 	protected String readEmailFromHtml(String filePath, Map<String, String> input) {
 		String msg = readContentFromFile(filePath);
 		try {
@@ -24,7 +25,7 @@ public class SendEmail {
 	}
 	
 	//Lê conteudo do arquivo.
-	private String readContentFromFile(String fileName) {
+	protected String readContentFromFile(String fileName) {
 		StringBuffer contents = new StringBuffer();
 
 		try {
