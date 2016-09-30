@@ -22,7 +22,8 @@ public class SendEmail {
 		}
 		return msg;
 	}
-		
+	
+	//Lê conteudo do arquivo.
 	private String readContentFromFile(String fileName) {
 		StringBuffer contents = new StringBuffer();
 
