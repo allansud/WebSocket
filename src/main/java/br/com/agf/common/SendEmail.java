@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class SendEmail {
 	
-	
+	//Lê todo template e coloca em uma string para enviar o e-mail.
 	protected String readEmailFromHtml(String filePath, Map<String, String> input) {
 		String msg = readContentFromFile(filePath);
 		try {
