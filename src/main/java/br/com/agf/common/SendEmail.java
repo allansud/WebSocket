@@ -23,7 +23,6 @@ public class SendEmail {
 		return msg;
 	}
 	
-	
 	private String readContentFromFile(String fileName) {
 		StringBuffer contents = new StringBuffer();
 
